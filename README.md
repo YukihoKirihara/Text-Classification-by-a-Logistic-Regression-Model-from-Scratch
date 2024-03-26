@@ -18,6 +18,7 @@ A simple model from scratch.
     + Stem and Lemmarize
 
 ### Feature Extraction
+[code](tfidf.py)
 Use TF-IDF as the Feature
 - Keep only the most frequent words for a reasonable feature size 
 - Calculate TF-IDF
@@ -29,6 +30,7 @@ $$TF-IDF = TF \times IDF$$
 Note that L2 normalisation is applied to the final TF-IDF for a better performance.
 
 ### Log-Linear Model
+[code](loglinear.py)
 - Logistic Regression Model
 $$\hat{y} = \text{softmax}\big( X_{N,F}W_{F,C}+b_{C} \big) $$
 , where $N$ is the size of train data, $F$ is the number of features and $C$ is the number of classes.
@@ -43,9 +45,11 @@ db =\frac{1}{N} \sum_{i=1}^{N} \big(\hat{y} - y\big)
 $$
 
 ### Update Algorithm
+[code](loglinear.py)
 Gradient Descend with a shrinking learning rate.
 
 ### Evalutaion
+[code](evaluation.py)
 - Accuracy
 $$ \text{Accuracy} = \frac{TP+TN}{TP+TN+FP+FN}$$
 - F1 Score (macro)
