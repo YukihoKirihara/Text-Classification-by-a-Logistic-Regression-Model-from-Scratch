@@ -63,8 +63,11 @@ $$ \text{Accuracy} = \frac{TP+TN}{TP+TN+FP+FN}$$
 - F1 Score (macro)
 
 $$ \text{Precision} = \frac{TP}{TP+FP} $$
+
 $$ \text{Recall} = \frac{TP}{TP+FN} $$
+
 $$ \text{F1 Score} = 2 \times \frac{PR}{P+R}$$
+
 $$ \text{Macro F1 Score} = \frac{1}{C}\sum_{i=1}^{C}\text{F1 Score}
 $$ 
 
