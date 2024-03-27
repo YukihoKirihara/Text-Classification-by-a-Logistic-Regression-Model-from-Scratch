@@ -39,6 +39,7 @@ $$\hat{y} = \text{softmax}\big( X_{N,F}W_{F,C}+b_{C} \big) $$
 , where $N$ is the size of train data, $F$ is the number of features and $C$ is the number of classes.
 
 - Cross Entropy Loss
+
 $$\text{loss} = -\frac{1}{N} \sum_{i=1}^N \sum_{j=1}^{C} y_{i,j} \log \hat{y}_{i,j}$$
 , where $y_{i,j}=1$ if train text $i$ belongs to class $j$, and $0$ otherwise.
 
@@ -56,8 +57,10 @@ Gradient Descend with a shrinking learning rate.
 [code](evaluation.py)
 
 - Accuracy
+
 $$ \text{Accuracy} = \frac{TP+TN}{TP+TN+FP+FN}$$
 - F1 Score (macro)
+
 $$ \text{Precision} = \frac{TP}{TP+FP} \\
 \text{Recall} = \frac{TP}{TP+FN} \\
 \text{F1 Score} = 2 \times \frac{PR}{P+R}\\
