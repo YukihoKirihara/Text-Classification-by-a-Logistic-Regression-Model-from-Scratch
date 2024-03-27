@@ -41,6 +41,7 @@ $$\hat{y} = \text{softmax}\big( X_{N,F}W_{F,C}+b_{C} \big) $$
 - Cross Entropy Loss
 
 $$\text{loss} = -\frac{1}{N} \sum_{i=1}^N \sum_{j=1}^{C} y_{i,j} \log \hat{y}_{i,j}$$
+
 , where $y_{i,j}=1$ if train text $i$ belongs to class $j$, and $0$ otherwise.
 
 - Gradients
@@ -61,9 +62,9 @@ Gradient Descend with a shrinking learning rate.
 $$ \text{Accuracy} = \frac{TP+TN}{TP+TN+FP+FN}$$
 - F1 Score (macro)
 
-$$ \text{Precision} = \frac{TP}{TP+FP} \\
-\text{Recall} = \frac{TP}{TP+FN} \\
-\text{F1 Score} = 2 \times \frac{PR}{P+R}\\
-\text{Macro F1 Score} = \frac{1}{C}\sum_{i=1}^{C}\text{F1 Score}
+$$ \text{Precision} = \frac{TP}{TP+FP} $$
+$$ \text{Recall} = \frac{TP}{TP+FN} $$
+$$ \text{F1 Score} = 2 \times \frac{PR}{P+R}$$
+$$ \text{Macro F1 Score} = \frac{1}{C}\sum_{i=1}^{C}\text{F1 Score}
 $$ 
 
